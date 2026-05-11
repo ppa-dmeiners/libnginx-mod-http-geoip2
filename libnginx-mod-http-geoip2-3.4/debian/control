@@ -1,0 +1,41 @@
+Source: libnginx-mod-http-geoip2
+Section: httpd
+Priority: optional
+Maintainer: Debian Nginx Maintainers <pkg-nginx-maintainers@alioth-lists.debian.net>
+Uploaders: Jan Mojžíš <janmojzis@debian.org>,
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-nginx,
+               libmaxminddb-dev,
+               libnginx-mod-stream,
+               nginx-dev (>= 1.24.0-2),
+Standards-Version: 4.7.2
+Homepage: https://github.com/leev/ngx_http_geoip2_module
+Vcs-Git: https://salsa.debian.org/nginx-team/libnginx-mod-http-geoip2.git
+Vcs-Browser: https://salsa.debian.org/nginx-team/libnginx-mod-http-geoip2
+Rules-Requires-Root: no
+
+Package: libnginx-mod-http-geoip2
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: nginx,
+Description: GeoIP2 HTTP module for Nginx
+ The ngx_http_geoip2 module creates variables with values depending on the
+ client IP address, using the precompiled MaxMind GeoIP2 databases.
+ .
+ Those variables include country, region, city, latitude, longitude, postal
+ code, etc.
+
+Package: libnginx-mod-stream-geoip2
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends},
+         ${shlibs:Depends},
+Recommends: nginx,
+Description: GeoIP2 Stream module for Nginx
+ The ngx_stream_geoip2 module creates variables with values depending on the
+ client IP address, using the precompiled MaxMind GeoIP2 databases.
+ .
+ Those variables include country, region, city, latitude, longitude, postal
+ code, etc.

@@ -1,0 +1,83 @@
+libnginx-mod-http-geoip2 (1:3.4-7+ubuntu24.04.1+deb.meiners.net+1.28.3) noble; urgency=medium
+
+  * Backport to noble from resolute
+
+ -- David Meiners <david@meiners.net>  Thu, 07 May 2026 16:09:31 +0000
+
+libnginx-mod-http-geoip2 (1:3.4-7build3) resolute; urgency=medium
+
+  * Rebuild against new nginx-abi-1.28.3-1.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 31 Mar 2026 20:38:08 +0200
+
+libnginx-mod-http-geoip2 (1:3.4-7build2) resolute; urgency=medium
+
+  * Rebuild against new nginx-abi-1.28.2.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Tue, 17 Feb 2026 22:02:15 +0100
+
+libnginx-mod-http-geoip2 (1:3.4-7build1) resolute; urgency=medium
+
+  * Rebuild against new nginx 1.28.1.
+
+ -- Gianfranco Costamagna <locutusofborg@debian.org>  Mon, 29 Dec 2025 14:13:01 +0100
+
+libnginx-mod-http-geoip2 (1:3.4-7) unstable; urgency=medium
+
+  * d/gbp.conf: dist = DEP14, debian-branch = debian/latest
+  * d/watch: rewrite to version 5, use Github uscan-template
+
+ -- Jan Mojžíš <janmojzis@debian.org>  Thu, 11 Sep 2025 15:48:34 +0200
+
+libnginx-mod-http-geoip2 (1:3.4-6) unstable; urgency=medium
+
+  * d/control: update my email to janmojzis@debian.org
+  * d/copyright: update my email to janmojzis@debian.org
+  * d/control: bump Standards-Version: 4.7.2, no changes
+  * d/copyright: bump debian/* copyright year
+  * d/watch: use more generic template
+
+ -- Jan Mojžíš <janmojzis@debian.org>  Fri, 11 Apr 2025 14:26:59 +0200
+
+libnginx-mod-http-geoip2 (1:3.4-5) unstable; urgency=medium
+
+  * Better usage of dh-sequence-nginx
+    * d/rules: remove override_dh_auto_configure, override_dh_auto_test
+    * d/control: remove Build-Depends nginx-abi-1.24.0-1
+    * d/control: use Build-Depends libnginx-mod-stream instead of
+      libnginx-mod-stream (<<1.24.0.1~), libnginx-mod-stream (>=1.24.0)
+    * d/control: use Build-Depends nginx-dev (>= 1.24.0-2)
+    * d/control: remove Depends libnginx-mod-stream (<<1.24.0.1~),
+      libnginx-mod-stream (>=1.24.0)
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 11 Oct 2023 07:37:12 +0200
+
+libnginx-mod-http-geoip2 (1:3.4-4) unstable; urgency=medium
+
+  * NEW ABI: rebuild with nginx-abi-1.24.0-1
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Tue, 27 Jun 2023 23:16:38 +0200
+
+libnginx-mod-http-geoip2 (1:3.4-3) unstable; urgency=medium
+
+  * d/t/generic rework. The test now checks module after
+    installation/reload/restart.
+  * d/control: bump Standards-Version: 4.6.2, no changes
+  * d/gbb.conf: switched to debian branch main (debian-branch = main)
+  * d/copyright: bump my copyright year
+  * d/copyright: reformat text to be compatible with 'cme update dpkg-copyright'
+  * NEW ABI: rebuild with nginx-abi-1.22.1-7
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Mon, 13 Feb 2023 12:56:24 +0100
+
+libnginx-mod-http-geoip2 (1:3.4-2) unstable; urgency=medium
+
+  * d/control: added Multi-Arch: foreign
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Fri, 09 Dec 2022 12:50:27 +0100
+
+libnginx-mod-http-geoip2 (1:3.4-1) experimental; urgency=medium
+
+  * Initial release. (Closes: 1024843)
+
+ -- Jan Mojžíš <jan.mojzis@gmail.com>  Wed, 30 Nov 2022 14:46:51 +0100
